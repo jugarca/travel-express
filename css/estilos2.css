@@ -13,16 +13,36 @@ body {
     background-color: #f2f2f2;
 }
 
-/* Menu - Zona de navegación de html*/
+/* Logo  - Se deja un 10% para el logo*/
+.logo {
+    width: 10%;
+    height: 4em; 
+    background-color: #031634;
+    float: left;
+}
+
+.logo-img{
+    width: 64px;
+    height: 64px;
+    padding-left: 25%;
+}
+/* End Logo */
+
+/* Menu - Zona de navegación de html - Se deja un 90% para el menu de navegacion*/
+
+
 nav {
     background-color: #031634;
     color: #f2f2f2;
     height: 4em; 
     text-align: right;
-    width: 100%;
+    width: 90%;
+    float: right;
+    
 }
 
 nav>ul{
+    width: 90%;
     padding-top: 2em; /* Para dejar a la altura determinada el menu desplegable*/
     list-style-type: none; /* Elimina los puntos de la lista */
     margin-right: 100px; /*Empuja el menu hacia la izquierda para que no este pegado. Se puede poner con porcentaje*/
@@ -43,7 +63,7 @@ nav>ul a{
     display: block;
     width: 100%;
     height: inherit;
-    font-size: 1.2em;
+    font-size: 1.0em;
     text-align: center;
     text-decoration: none;
     color: #f2f2f2;
@@ -60,7 +80,7 @@ nav ul li:hover .submenu{
 .submenu{
     position: absolute;
     display: none;
-    width: 450%; /*  Para jugar con los tamaños de los menus : !!!! pondria fijo px*/
+    width: 200px; /*  Para jugar con los tamaños de los menus : !!!! pondria fijo px*/
     background: #031634;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
