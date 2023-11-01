@@ -164,7 +164,6 @@ p {
 	display: flex;
 	padding: 0;
 	width: 400%;
-	
 	animation: slide 20s infinite alternate ease-in-out;
 }
 
@@ -190,6 +189,8 @@ p {
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
 }
+
+/* End Slider*/
 
 /*A partir de aqui es el footer*/
 .footer-basic {

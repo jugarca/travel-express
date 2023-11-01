@@ -1,0 +1,17 @@
+1- Articulo para montar un menú con html y css:
+
+	https://www.cablenaranja.com/como-crear-un-menu-dropdown-con-puro-css/
+	https://www.cevagraf.coop/blog/menu-desplegable-css/
+	https://blog.hubspot.es/website/menu-desplegable-html  En este punto lo explica - (Cómo hacer un menú que se despliegue al desplazarse sobre él)
+	https://www.falconmasters.com/tutoriales/como-hacer-un-menu-desplegable/ (más complejo, tenéis que buscar lo mas sencillo) 
+	
+2- Slider:
+
+	https://www.youtube.com/watch?v=bkgnp2lp7FQ
+	https://alvarotrigo.com/blog/create-a-slider-with-pure-css/
+	https://codepen.io/surajbws/pen/zmNdmy 
+	
+3- Footer:
+
+	
+	https://web-eau.net/en/blog/10-best-footer-html-css-snippets
