@@ -55,7 +55,7 @@ nav>ul li {
    position: relative;
    display: inline-block; /* Esten alineados las diferentes entradas de menu*/
    /* width: 110px; Distancia entre cada entrada de menu principal px o %*/
-   height: 32px; /* Altura para que no se vea entre los menus y submenus nada blanco*/
+   height: 30px; /* Altura para que no se vea entre los menus y submenus nada blanco*/
 
 }
 
