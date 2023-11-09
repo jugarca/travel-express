@@ -101,15 +101,7 @@ nav ul li:hover .submenu{
     height: 60em;
 }
 
-/* pie de pagina */
-footer {
-    background-color: #031634;
-    color: white;
-    height: 3em; 
-    padding-top: 20px;
-    text-align: center;
-}
-/* End pie de pagina */
+
 
 
 h1 {
@@ -193,6 +185,7 @@ p {
 /* End Slider*/
 
 /*A partir de aqui es el footer*/
+/*
 .footer-basic {
     padding:40px 0;
     background-color:#ffffff;
@@ -252,4 +245,68 @@ p {
     color:#aaa;
     margin-bottom:0;
   }
-  
+  */
+  /*footer*/
+  /* pie de pagina */
+  footer {
+    background-color: #031634;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.footerContainer {
+    margin: 10px auto;
+}
+
+.socialIcons {
+ display: flex;
+ justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin: 10px 10px 20px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+}
+
+.socialIcons a:hover{
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: #f2f2f2;
+    transition: 0.5s;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footerNav ul li a {
+    color: #f2f2f2;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+/* End pie de pagina */
+
