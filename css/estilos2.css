@@ -15,18 +15,31 @@ body {
     background-color: #f2f2f2;
 }
 
+header {
+    display: flex;
+    height: 14px;
+}
+
 /* Logo  - Se deja un 10% para el logo*/
 .logo {
-    width: 10%;
+    width: 400px;
     height: 4em; 
     background-color: #031634;
     float: left;
+    align-items: center;
+    display: flex;
 }
 
 .logo-img{
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 50px;
     padding-left: 25%;
+    padding-bottom: 5px;
+    margin-right: 15px;
+}
+
+.nombre-empresa {
+    color: #f2f2f2;
 }
 /* End Logo */
 
@@ -388,4 +401,3 @@ footer {
     color: #E8DDCB;
 }
 /* End pie de pagina */
-
