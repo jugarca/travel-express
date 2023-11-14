@@ -3,42 +3,200 @@
     padding: 0;
 }
 
+/* fuente principal para el body y background */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Belleza', sans-serif;                                             
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
 }
 
-header {
-    background-color: #036564;
-    color: white;
-    padding: 30px;
-    text-align: center;
-}
-
-ul {
-    list-style-type: none;
-    /* Elimina los puntos de la lista */
-}
-
-li {
-    margin: 0;
-    padding: 0;
-    display: inline;
-    /* Hace que los elementos se muestren en línea */
-    margin-right: 10px;
-    /* Espacio entre elementos (ajustable) */
-}
-
 h1 {
-    color: #000000;
+    text-transform: uppercase;
+    color: #031634;
     text-align: center;
 }
-a {
-    color: #E8DDCB;
-    text-decoration: none;
+
+/* Logo  - Se deja un 10% para el logo*/
+.logo {
+    width: 21%;
+    height: 4em; 
+    background-color: #031634;
+    color: #f2f2f2;
+    float: left;
+    align-items: center;
+    display: flex;
 }
+
+.logo-img{
+    width: 60px;
+    height: 50px;
+    padding-left: 25%;
+    padding-bottom: 5px;
+    margin-right: 15px;
+}
+/* End Logo */
+
+/* Menu - Zona de navegación de html - Se deja un 90% para el menu de navegacion*/
+nav {
+    background-color: #031634;
+    color: #f2f2f2;
+    height: 4em; 
+    text-align: right;
+    width: 79%;
+    float: right;
+    
+}
+
+nav>ul{
+    width: 80%;
+    padding-top: 2em; /* Para dejar a la altura determinada el menu desplegable*/
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin-right: 100px; /*Empuja el menu hacia la izquierda para que no este pegado. Se puede poner con porcentaje*/
+}
+
+nav>ul li {
+   /* display: inline;     Hace que los elementos se muestren en línea */
+   /*  margin-right: 10px; Espacio entre elementos (ajustable) */  
+   margin-right: 10px;
+   position: relative;
+   display: inline-block; /* Esten alineados las diferentes entradas de menu*/
+   /* width: 110px; Distancia entre cada entrada de menu principal px o %*/
+   height: 30px; /* Altura para que no se vea entre los menus y submenus nada blanco*/
+
+}
+
+nav>ul a{
+    display: block;
+    width: 100%;
+    height: inherit;
+    font-size: 1.0em;
+    text-align: center;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+nav>ul a:hover{
+    color: #E8DDCB;
+}
+
+nav ul li:hover .submenu{
+    display: block;
+}
+
+.submenu{
+    position: absolute;
+    display: none;
+    width: 200px; /*  Para jugar con los tamaños de los menus : !!!! pondria fijo px*/
+    background: #031634;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.submenu ul li{
+    display: block;
+    width: 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* End Menu - Zona de navegación de html*/
+
+/* Tamaño de la parte central la pagina con una resolucion de 1920x1080 */
+.principal-content{
+    height: 60em;
+}
+
+/* Seccion Opciones - Pantalla principal */
+.principal-content-opciones{
+    height: 17em;
+}
+
+.principal-content-opciones-content{
+    background-color: #eae8e4;
+    margin-top: 1em;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    color: #031634;
+    column-count:3;
+    column-gap:120px;
+    column-rule:4px Outset #f2f2f2;
+    list-style-type: none;
+ }
+
+.principal-content-opciones-content-redirect{
+    margin-right: 2rem;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 100%;
+    color: #031634;
+ }
+
+ section a:hover{
+    color: #b09872;
+    text-decoration: none;
+ }
+
+ /* End Seccion Opciones - Pantalla principal */
+
+/* Seccion Gastronomia - Pantalla principal */
+
+.principal-content-gastronomia{
+    height: 25em;
+}
+
+.principal-content-gastronomia-content{
+    background-color: #f2f2f2;
+    text-align: center;
+    margin-top: 1em;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    color: #031634;
+    column-count:4;
+    column-gap:80px;
+    list-style-type: none;
+}
+
+
+.principal-content-gastronomia-content-image{
+    width: 200px;
+    height: 200px;
+    border: #031634 solid 4px;
+}
+/* End Seccion Gastronomia - Pantalla principal */
+
+/* Seccion Nosotros - Pantalla principal */
+.principal-content-nosotros{
+    height: 33em;
+}
+
+.principal-content-nosotros-content{
+    background-color: #eae8e4;
+    text-align: center;
+    margin-top: 1em;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    color: #031634;
+    column-count:2;
+    column-gap:120px;
+    list-style-type: none;
+}
+
+.principal-content-nosotros-content-image{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+section>div>li a:hover{
+    opacity: .5;
+}
+/* End Seccion Nosotros - Pantalla principal */
 
 p {
     text-align: justify;
@@ -46,3 +204,174 @@ p {
     margin: 20px;
     padding: 20px;
 }
+
+.title {
+    height: 5em;
+}
+  
+.title-content {
+  text-align: center;
+  color: #031634;
+  font-size: xx-large;
+  padding-top: 100px;
+}
+  
+.foto {
+  width: 50%;
+  height: 55em;
+  float: left;
+}
+
+.foto-construccion {
+    width: 90%;
+    height: 55em;
+    float: left;
+  }
+  
+.foto-content {
+    padding: 100px;
+    width: 700px;
+    height: 700px;
+    border-radius: 120px;
+}
+
+.foto-content-construccion {
+    padding: 100px;
+    width: 100%;
+    height: 700px;
+    border-radius: 120px;
+}
+  
+.resumen {
+    width: 50%;
+    height: 55em;
+    float: right;
+}
+  
+.resumen-content {
+    padding: 100px;
+    width: 700px;
+    height: 700px;
+}
+
+/*Página tour - Desarrollo de las paginas siguientes
+.foto-tour{}
+.precio-tour{}
+.tabla-tour{}
+/*End Página tour*/
+
+/*Página Detalle tour - Desarrollo de las paginas siguientes
+.titulo-detalle-tour{}
+.foto-detalle-tour{}
+.resumen-detalle-tour{}
+/*End Página Detalle tour*/
+
+
+/*Slider*/
+.imagenes-slider{
+    width: 1000px;
+    height: 1000px;
+}
+
+.slider-frame {
+	width: 100%;
+    height: 93.5%;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/* End Slider */
+
+/* footer */
+footer {
+    background-color: #031634;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.footerContainer {
+    margin: 10px auto;
+}
+
+.socialIcons {
+ display: flex;
+ justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin: 10px 10px 20px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 30px;
+    color: #031634;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+}
+
+.socialIcons a:hover{
+    background-color: #031634;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: #f2f2f2;
+    transition: 0.5s;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footerNav ul li a {
+    color: #f2f2f2;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+    color: #E8DDCB;
+}
+/* End footer */
