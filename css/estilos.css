@@ -11,18 +11,21 @@ body {
     background-color: #f2f2f2;
 }
 
+/*Para anclar el header a la parte de arriba*/
 header {
-    position: sticky;
+    position: sticky; 
     top: 0;
 }
 
+/*Cuerpo de la página*/
 h1 {
     text-transform: uppercase;
     color: #031634;
     text-align: center;
 }
 
-a{
+/*Texto al lado del logo*/
+a {
     color: #f2f2f2;
     text-decoration: none;
 }
@@ -76,6 +79,7 @@ nav>ul li {
 
 }
 
+/*Texto del menú y del desplegable*/
 nav>ul a{
     display: block;
     width: 100%;
@@ -86,6 +90,7 @@ nav>ul a{
     color: #f2f2f2;
 }
 
+/*Texto del menú y del desplegable al pasar por encima*/
 nav>ul a:hover{
     color: #E8DDCB;
 }
@@ -122,6 +127,7 @@ nav ul li:hover .submenu{
     height: 17em;
 }
 
+/*Primer menú del cuerpo*/
 .principal-content-opciones-content{
     background-color: #eae8e4;
     margin-top: 1em;
@@ -135,6 +141,7 @@ nav ul li:hover .submenu{
     list-style-type: none;
  }
 
+ /*Enlace del primer menú del cuerpo*/
 .principal-content-opciones-content-redirect{
     margin-right: 2rem;
     font-size: 15px;
@@ -285,16 +292,21 @@ p {
 
 .slider-frame {
 	width: 100%;
-    height: 93.5%;
-	margin:50px auto 0;
-	overflow: hidden;
+    height: 93.5%; /*El tamaño es muy preciso para que no 
+    solape el contenido que viene a continuación*/
+	margin:50px auto 0; /*El tamaño es muy preciso para que no 
+    desplace el contenido*/
+	overflow: hidden; /*Oculta el contenido que sobra*/
 }
 
 .slider-frame ul {
-	display: flex;
+	display: flex; /*Para poner las imágenes una al lado de 
+    la otra*/
 	padding: 0;
-	width: 400%;
-	animation: slide 20s infinite alternate ease-in-out;
+	width: 400%; /*Como hemos puesto 4 imágenes, se reparte 
+    entre las cuatro*/
+	animation: slide 20s infinite alternate ease-in-out; /*Para
+    que las transiciones sean suaves*/
 }
 
 .slider-frame li {
@@ -307,9 +319,12 @@ p {
 }
 
 @keyframes slide {
+    /*Reparte el tiempo de la animación 
+    entre las cuatro imágenes*/
 	0% {margin-left: 0;}
 	20% {margin-left: 0;}
-	
+	/*El intervalo que nos dejamos es el tiempo 
+    entre transiciones*/
 	25% {margin-left: -100%;}
 	45% {margin-left: -100%;}
 	
@@ -325,7 +340,7 @@ p {
 /* footer */
 footer {
     background-color: #031634;
-    color: white;
+    color: #ffffff;
     text-align: center;
     overflow: hidden;
     padding: 15px;
@@ -335,11 +350,13 @@ footer {
     margin: 10px auto;
 }
 
+/*Distribucion logos*/
 .socialIcons {
  display: flex;
  justify-content: center;
 }
 
+/*Circulo logos*/
 .socialIcons a{
     text-decoration: none;
     padding: 10px;
@@ -348,6 +365,7 @@ footer {
     border-radius: 50%;
 }
 
+/*Logos*/
 .socialIcons a i{
     font-size: 30px;
     color: #031634;
@@ -358,11 +376,6 @@ footer {
 
 .socialIcons a:hover{
     background-color: #031634;
-    transition: 0.5s;
-}
-
-.socialIcons a:hover i{
-    color: #f2f2f2;
     transition: 0.5s;
 }
 
