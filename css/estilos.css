@@ -396,11 +396,12 @@ footer {
 }
 
 .footerNav ul {
-    display: flex;
+    /*display: flex; Se elimina el display:flex*/
     justify-content: center;
     list-style: none;
 }
 
+/* Se elimina porque no es necesario por las listas. 
 .footerNav ul li a {
     color: #f2f2f2;
     margin: 20px;
@@ -412,5 +413,21 @@ footer {
 .footerNav ul li a:hover {
     opacity: 1;
     color: #E8DDCB;
+}
+*/
+
+.footerNav a {
+    color: #f2f2f2;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.footerNav a:hover {
+    color: #E8DDCB;
+    margin: 20px;
+    text-decoration: none;
+    opacity: 1;
 }
 /* End footer */
