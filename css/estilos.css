@@ -133,6 +133,19 @@ nav ul li:hover .submenu{
     height: 60em;
 }
 
+.principal-content p {
+    text-align: justify;
+    line-height: 1.2;
+    margin: 5px;
+    padding: 5px;
+}
+
+.pSinMargen{
+    text-align: justify;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
 /* Seccion Opciones - Pantalla principal */
 .principal-content-opciones{
     height: 17em;
@@ -297,6 +310,71 @@ p {
     width: 700px;
     height: 700px;
 }
+
+/*Pantalla de Tour específico*/
+.tour-foto{
+    height: 25em;
+}
+
+.tour-foto-content{
+    width: 100%;
+    height: 25em;
+}
+
+.tour-precio{
+    margin-top: 4em;
+    height:8em;
+    border: #031634 solid;
+    color: #031634;
+    font-weight: bolder;
+}
+
+.tour-precio-left{
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin: 5px;
+    font-size: 42px;
+    padding: 40px;
+}
+
+.tour-precio-right{
+    float: right;
+    width: 40%;
+    text-align: right;
+    margin: 5px;
+    padding: 40px;
+    font-size: 42px;
+}
+
+.tour-tabla{
+    height: 27em;
+}
+
+table{
+    text-align: center;
+    color: #031634;
+    font-size:42px;
+    border-spacing: 5px;
+    table-layout: fixed; 
+    width: 1500px;
+    margin: auto;
+    padding-top: 20px;
+    /*border-spacing: 20px;*/
+}
+
+.td-dias{
+    background-color: #031634;
+    opacity: .8;
+    color: #f2f2f2;
+}
+
+td>a{
+    color: #031634;
+}
+
+
+
 
 /*Página tour - Desarrollo de las paginas siguientes
 .foto-tour{}

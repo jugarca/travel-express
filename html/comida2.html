@@ -5,44 +5,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Un Viaje Inolvidable</title>
-  <link rel="stylesheet" type="text/css" href="../css/estilos2.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/estilos.css" media="screen" />
+  <!-- Se importa el css para obtener los iconos del footer -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+/>
+<!-- Se importa el css para cargar las fuentes de letras deseadas -->
+<link href="https://fonts.cdnfonts.com/css/belleza" rel="stylesheet" />
+<style>
+  @import url("https://fonts.cdnfonts.com/css/belleza");
+</style>
 </head>
 
 <body>
-  <!--
-    <header>
-        Travel Express - Viaje a Vietnam
-    </header>
-    -->
-  <div class="logo">
-    <img src="../imagenes/logo.jpg" class="logo-img" alt=""></img>
-  </div>
-  <nav id="menu">
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Tours</a>
-        <div class="submenu">
-          <ul>
-            <li><a href="#">Vietnam Inolvidable</a></li>
-            <li><a href="#">Vietnam Tradicional</a></li>
-            <li><a href="#">Vietnam Luna de Miel</a></li>
-            <li><a href="#">Tour a medida</a></li>
-          </ul>
-        </div>
-      </li>
-      <li><a href="#">Experiencias</a>
-        <div class="submenu">
-          <ul>
-            <li><a href="experiencia1.html">Paseo en bicicleta</a></li>
-            <li><a href="#">Visita a My Son</a></li>
-            <li><a href="#">Clase de cocina</a></li>
-          </ul>
-        </div>
-      </li>
-      <li><a href="#">Gastronomía</a></li>
-      <li><a href="#">Información</a></li>
-    </ul>
-  </nav>
+  <header>
+    <div class="logo">
+      <div class="logo-img-width">
+        <a href="#">
+          <img src="../imagenes/logoColoreado2.png" class="logo-img" alt="" />
+        </a>
+      </div>
+      <div class="logo-title-width">
+        <a href="#" >
+           <h2>Vietnam Express</h2>
+        </a>
+      </div>
+    </div>
+    <nav id="menu">
+      <ul>
+        <li>
+          <a href="html/enConstruccion.html">Tours</a>
+          <div class="submenu">
+            <ul>
+              <li><a href="html/enConstruccion.html">Vietnam Inolvidable</a></li>
+              <li><a href="html/enConstruccion.html">Vietnam Tradicional</a></li>
+              <li><a href="html/enConstruccion.html">Vietnam Luna de Miel</a></li>
+
+              <li><a href="html/enConstruccion.html">Tour a medida</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="html/enConstruccion.html">Experiencias</a>
+          <div class="submenu">
+            <ul>
+              <li><a href="html/enConstruccion.html">Paseo en bicicleta</a></li>
+              <li><a href="html/enConstruccion.html">Visita a My Son</a></li>
+              <li><a href="html/enConstruccion.html">Clase de cocina</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="html/enConstruccion.html">Gastronomía</a></li>
+        <li><a href="html/enConstruccion.html">Información</a></li>
+        <li><a href="html/enConstruccion.html">Conócenos</a></li>
+      </ul>
+    </nav>
+  </header>
+
 
   <section class="principal-content" id="principal-content">
     <div class="title">
@@ -68,7 +88,30 @@ Para el relleno:<br>
       </div>
     </div>
   </section>
-  <footer></footer>
+  <footer>
+    <div class="socialIcons">
+      <a href="html/enConstruccion.html"><i class="fab fa-facebook-f"></i></a>
+      <a href="html/enConstruccion.html"><i class="fab fa-instagram"></i></a>
+      <a href="html/enConstruccion.html"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="footerNav">
+      <a href="#">Inicio</a>
+      <a href="html/enConstruccion.html">Servicios</a>
+      <a href="html/enConstruccion.html">Sobre nosotros</a>
+      <a href="html/enConstruccion.html">Términos</a>
+      <a href="html/enConstruccion.html">Política de privacidad</a>
+      <!-- No se necesita el uso de li porque si no hay que poner display flex.
+      <ul>
+        <ul> 
+          <li><a href="#">Inicio</a></li>
+          <li><a href="html/enConstruccion.html">Servicios</a></li>
+          <li><a href="html/enConstruccion.html">Sobre nosotros</a></li>
+          <li><a href="html/enConstruccion.html">Términos</a></li>
+          <li><a href="html/enConstruccion.html">Política de privacidad</a></li>
+        </ul>
+      </ul>-->
+    </div>
+  </footer>
 </body>
 
 </html>
