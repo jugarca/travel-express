@@ -525,3 +525,45 @@ footer {
     opacity: 1;
 }
 /* End footer */
+
+
+/* NEWSLETTER */
+.container-newsletter-mail {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-foto{
+    margin-bottom: 20px;
+}
+
+.newsletter-foto img {
+    height: 725px;
+}
+
+.tbox {
+    width: 260px;
+}
+
+.btn {
+    border: none;
+    background: #031634;
+    color: #f2f2f2;
+    width: 130px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+/* información de interés*/
+.mapa-informacion {
+    margin-top: 150px;
+    margin-left: 110px;
+    float: left;
+}
+
+.informacionInteres {
+    margin-top: 125px;
+    margin-right: 350px;
+    float: right;
+}
