@@ -311,7 +311,7 @@ p {
     height: 700px;
 }
 
-/*Pantalla de Tour específico*/
+/*Pantalla de Tour principal*/
 .tour-foto{
     height: 25em;
 }
@@ -373,6 +373,35 @@ td>a{
     color: #031634;
 }
 
+/* End Tour pagina principal */
+
+/* Pantalla de Tour Detalle */
+
+.tour-detalle-titulo{
+    height: 10em;
+}
+
+.tour-detalle-titulo>h1{
+   font-size: 72px; 
+   padding-top: 1.2em;
+}
+
+.tour-detalle-foto{
+    height: 30em;
+}
+
+.tour-detalle-foto-content{
+    height: 30em;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.tour-detalle-descripcion{
+    height: 30em;
+    
+}
+
+/* End Pantalla de Tour Detalle */
 
 
 
