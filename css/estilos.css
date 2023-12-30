@@ -133,6 +133,10 @@ nav ul li:hover .submenu{
     height: 60em;
 }
 
+.principal-content-tour-detalle{
+    height: 65em;
+}
+
 .principal-content p {
     text-align: justify;
     line-height: 1.2;
@@ -311,6 +315,34 @@ p {
     height: 700px;
 }
 
+.resumen-menu {
+    margin-top: 100px;
+    width: 700px;
+    height: 30px;
+}
+
+.resumen-menu a{
+    color: #031634;
+    text-decoration: none;
+    font-size: 28px;
+    opacity: 1;
+}
+
+.resumen-menu a:hover{
+    color: #b09872;
+    text-decoration: none;
+    font-size: 28px;
+    opacity: 1;
+}
+
+.resumen-content-comida {
+    margin-top: 40px;
+    width: 700px;
+    height: 440px;
+    font-size: 20px;
+    overflow: hidden;
+}
+
 /*Pantalla de Tour principal*/
 .tour-foto{
     height: 25em;
@@ -386,24 +418,93 @@ td>a{
    padding-top: 1.2em;
 }
 
+.tour-detalle-titulo>h1 a{
+    color:#031634;
+ }
+
 .tour-detalle-foto{
     height: 30em;
 }
 
 .tour-detalle-foto-content{
     height: 30em;
+    margin-top: 30px;
     width: 100%;
     padding-top: 25px;
 }
 
 .tour-detalle-descripcion{
-    height: 30em;
-    
+    height: 20em;
+    margin-top: 60px;
+    justify-content: center;
+    font-size: 16px;
+    padding: 30px;
+
 }
+
+.tour-detalle-descripcion>p{
+    text-align: justify;
+    line-height: 0;
+    margin: 5px;
+    padding: 5px;
+}
+
 
 /* End Pantalla de Tour Detalle */
 
+/* Comidas - los imprescindibles */
 
+.fotos-imprescindibles-1{
+    height: 20em;
+    margin-top: 7em;
+}
+
+.foto-title{
+    height: 5em;
+}
+
+.foto-title-content{
+    text-align: center;
+    color: #031634;
+    font-size: xx-large;
+    padding-top: 100px;
+}
+
+.foto-imprescindibles{
+    height: 15em;
+    text-align: center;
+}
+
+.foto-imprescindibles-content{
+    width: 60%;
+    height: 100%;
+    border-radius: 8px;
+    border: #031634 solid;
+}
+
+.fotos-imprescindibles-izq{
+    float: left;
+    width: 33%;
+}
+
+.fotos-imprescindibles-center{
+    float: left;
+    width: 33%;
+}
+
+.fotos-imprescindibles-derecha{
+    float: right;
+    width: 33%;
+}
+
+.fotos-imprescindibles-2{
+    height: 20em;
+    margin-top: 3em;
+}
+
+
+
+/* Fin Comidas - los imprescindibles */
 
 /*Página tour - Desarrollo de las paginas siguientes
 .foto-tour{}
