@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Un Viaje Inolvidable</title>
+  <link rel="stylesheet" type="text/css" href="../css/estilos.css" media="screen" />
+  <!-- Se importa el css para obtener los iconos del footer -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+/>
+<!-- Se importa el css para cargar las fuentes de letras deseadas -->
+<link href="https://fonts.cdnfonts.com/css/belleza" rel="stylesheet" />
+<style>
+  @import url("https://fonts.cdnfonts.com/css/belleza");
+</style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-img-width">
+        <a href="#">
+          <img src="../imagenes/logoColoreado2.png" class="logo-img" alt="" />
+        </a>
+      </div>
+      <div class="logo-title-width">
+        <a href="#" >
+           <h2>Vietnam Express</h2>
+        </a>
+      </div>
+    </div>
+    <nav id="menu">
+      <ul>
+        <li>
+          <a href="html/enConstruccion.html">Tours</a>
+          <div class="submenu">
+            <ul>
+              <li><a href="html/enConstruccion.html">Vietnam Inolvidable</a></li>
+              <li><a href="html/enConstruccion.html">Vietnam Tradicional</a></li>
+              <li><a href="html/enConstruccion.html">Vietnam Luna de Miel</a></li>
+
+              <li><a href="html/enConstruccion.html">Tour a medida</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="html/enConstruccion.html">Experiencias</a>
+          <div class="submenu">
+            <ul>
+              <li><a href="html/enConstruccion.html">Paseo en bicicleta</a></li>
+              <li><a href="html/enConstruccion.html">Visita a My Son</a></li>
+              <li><a href="html/enConstruccion.html">Clase de cocina</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="html/enConstruccion.html">Gastronomía</a></li>
+        <li><a href="html/enConstruccion.html">Información</a></li>
+        <li><a href="html/enConstruccion.html">Conócenos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="principal-content" id="principal-content">
+    <div class="title">
+      <h1 class="title-content">Tour a Medida</h1>
+    </div>
+    <div class="foto">
+      <!-- TODO: Meter el video -->
+     <img src="../imagenes/comida/comida3.jpg" class="foto-content" alt="">
+    </div>
+
+    
+    <div class="resumen"> 
+      <div  class="resumen-content">
+        <!-- Formulario a Medida-->
+        <form id="formulario a medida." class="form">
+          <div class="inputContainer">
+            <input class="input" type="text" name="nombre" id="nombre" placeholder="a" required>
+            <label class="label" for="nombre">Nombre y apellidos</label>
+          </div>
+          <div class="inputContainer">  
+            <input class="input" type="number" name="numero" id="numero" maxlength="60" placeholder="a" required>
+            <label class="label" for="numero">Número de personas</label>
+          </div>
+          <div class="inputContainer">  
+            <input class="input" type="email" name="email" id="email" placeholder="a" required>
+            <label class="label" for="email">Email</label>
+          </div>  
+          <div class="inputContainer">
+            <select class="input" name="estrellas" placeholder="a" id="estrellas">
+              <option value="5">5 estrellas</option>
+              <option value="4">4 estrellas</option>
+              <option value="3">3 estrellas</option>
+              <option value="2">2 estrellas</option>
+              <option value="1">1 estrella</option>
+            </select>
+            <label class="label" for="estrellas">Estrellas del hotel</label>
+          </div>  
+          <div class="inputContainer">  
+            <input class="input" type="date" name="finicio" id="finicio" placeholder="a" required>
+            <label class="label" for="fechaInicio">Fecha de Salida</label>
+          </div>
+          <div class="inputContainer">  
+            <input class="input" type="date" name="fregreso" id="fregreso" placeholder="a" required>
+            <label class="label" for="fechaRegreso">Fecha de Regreso</label>
+          </div>  
+          <div class="inputContainer">
+            <textarea class="input" name="observaciones" id="observaciones" cols="30" rows="10" placeholder="a"></textarea>
+            <label class="label" for="observaciones">Que quiere visitar</label>
+          </div>  
+            <button class="submitBtn">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="socialIcons">
+      <a href="html/enConstruccion.html"><i class="fab fa-facebook-f"></i></a>
+      <a href="html/enConstruccion.html"><i class="fab fa-instagram"></i></a>
+      <a href="html/enConstruccion.html"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="footerNav">
+      <a href="#">Inicio</a>
+      <a href="html/enConstruccion.html">Servicios</a>
+      <a href="html/enConstruccion.html">Sobre nosotros</a>
+      <a href="html/enConstruccion.html">Términos</a>
+      <a href="html/enConstruccion.html">Política de privacidad</a>
+      <!-- No se necesita el uso de li porque si no hay que poner display flex.
+      <ul>
+        <ul> 
+          <li><a href="#">Inicio</a></li>
+          <li><a href="html/enConstruccion.html">Servicios</a></li>
+          <li><a href="html/enConstruccion.html">Sobre nosotros</a></li>
+          <li><a href="html/enConstruccion.html">Términos</a></li>
+          <li><a href="html/enConstruccion.html">Política de privacidad</a></li>
+        </ul>
+      </ul>-->
+    </div>
+  </footer>
+</body>
+
+</html>
