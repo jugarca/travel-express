@@ -1,0 +1,798 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* fuente principal para el body y background */
+body {
+    font-family: 'Belleza', sans-serif;                                             
+    background-color: #f2f2f2;
+}
+
+/*Para anclar el header a la parte de arriba*/
+header {
+    position: sticky; 
+    top: 0;
+}
+
+/*Cuerpo de la página*/
+h1 {
+    text-transform: uppercase;
+    color: #031634;
+    text-align: center;
+}
+
+/*Texto al lado del logo*/
+a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+/* Logo  - Se deja un 21% para el logo*/
+.logo {
+    width: 21%;
+    height: 4em; 
+    background-color: #031634;
+    color: #f2f2f2;
+    float: left;
+    text-align: right;
+    /*align-items: center;
+    display: flex;*/
+}
+
+
+.logo-img-width{
+   width: 13%;
+   float: left;
+}
+
+.logo-img{
+    width: 60px;
+    height: 50px;
+    padding-left: 40%; /* 25% */
+    padding-bottom: 5px;
+    margin-right: 30px;
+}
+
+
+.logo-title-width{
+    width: 61%;
+    padding-top: 1em;
+}
+/* End Logo */
+
+/* Menu - Zona de navegación de html - Se deja un 79% para el menu de navegacion*/
+nav {
+    background-color: #031634;
+    color: #f2f2f2;
+    height: 4em; 
+    text-align: right;
+    width: 79%;
+    float: right;
+    
+}
+
+nav>ul{
+    width: 80%;
+    padding-top: 2em; /* Para dejar a la altura determinada el menu desplegable*/
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin-right: 100px; /*Empuja el menu hacia la izquierda para que no este pegado. Se puede poner con porcentaje*/
+}
+
+nav>ul li {
+   /* display: inline;     Hace que los elementos se muestren en línea */
+   /*  margin-right: 10px; Espacio entre elementos (ajustable) */  
+   margin-right: 10px;
+   position: relative;
+   display: inline-block; /* Esten alineados las diferentes entradas de menu*/
+   /* width: 110px; Distancia entre cada entrada de menu principal px o %*/
+   height: 30px; /* Altura para que no se vea entre los menus y submenus nada blanco*/
+
+}
+
+/*Texto del menú y del desplegable*/
+nav>ul a{
+    display: block;
+    width: 100%;
+    height: inherit;
+    font-size: 1.0em;
+    text-align: center;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+/*Texto del menú y del desplegable al pasar por encima*/
+nav>ul a:hover{
+    color:#E8DDCB;
+}
+
+nav ul li:hover .submenu{
+    display: block;
+}
+
+.submenu{
+    position: absolute;
+    display: none;
+    width: 200px; /*  Para jugar con los tamaños de los menus : !!!! pondria fijo px*/
+    background: #031634;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.submenu ul li{
+    display: block;
+    width: 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* End Menu - Zona de navegación de html*/
+
+/* Tamaño de la parte central la pagina con una resolucion de 1920x1080 */
+.principal-content{
+    height: 60em;
+}
+
+.principal-content-tour-detalle{
+    height: 65em;
+}
+
+.principal-content p {
+    text-align: justify;
+    line-height: 1.2;
+    margin: 5px;
+    padding: 5px;
+}
+
+.pSinMargen{
+    text-align: justify;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+/* Seccion Opciones - Pantalla principal */
+.principal-content-opciones{
+    height: 17em;
+}
+
+/*Primer menú del cuerpo*/
+.principal-content-opciones-content{
+    background-color: #eae8e4;
+    margin-top: 1em;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    color: #031634;
+    column-count:3;
+    column-gap:120px;
+    column-rule:4px Outset #f2f2f2;
+    list-style-type: none;
+ }
+
+ /*Enlace del primer menú del cuerpo*/
+.principal-content-opciones-content-redirect{
+    margin-right: 2rem;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 100%;
+    color: #031634;
+ }
+
+ section a:hover{
+    color: #b09872;
+    text-decoration: none;
+ }
+
+ /* End Seccion Opciones - Pantalla principal */
+
+/* Seccion Gastronomia - Pantalla principal */
+
+.principal-content-gastronomia{
+    height: 25em;
+}
+
+.principal-content-gastronomia-content{
+    background-color: #f2f2f2;
+    text-align: center;
+    margin-top: 1em;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    color: #031634;
+    column-count:4;
+    column-gap:80px;
+    list-style-type: none;
+}
+
+
+.principal-content-gastronomia-content-image{
+    width: 200px;
+    height: 200px;
+    border: #031634 solid 4px;
+}
+/* End Seccion Gastronomia - Pantalla principal */
+
+/* Seccion Nosotros - Pantalla principal */
+.principal-content-nosotros{
+    height: 33em;
+}
+
+/*Mi intento de cambiar el color del fondo*/
+.principal-content-nosotros>h1{
+    padding-top: 15px;
+    background-color: #eae8e4;
+    color: #031634;
+}
+
+.principal-content-nosotros-content{
+    background-color: #eae8e4;
+    text-align: center;
+    /*margin-top: 1em;*/
+    padding-top: 3em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    color: #031634;
+    column-count:2;
+    column-gap:120px;
+    list-style-type: none;
+}
+
+.principal-content-nosotros-content-image{
+    background-color: #eae8e4;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+/*Se centra el texto*/
+.principal-content-nosotros-texto{
+    padding: 0 25% 0;
+}
+
+section>div>li a:hover{
+    opacity: .5;
+}
+
+
+/* End Seccion Nosotros - Pantalla principal */
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+}
+
+.title {
+    height: 5em;
+}
+  
+.title-content {
+  text-align: center;
+  color: #031634;
+  font-size: xx-large;
+  padding-top: 100px;
+}
+  
+.foto {
+  width: 50%;
+  height: 55em;
+  float: left;
+}
+
+.foto-construccion {
+    width: 90%;
+    height: 55em;
+    float: left;
+  }
+  
+.foto-content {
+    padding: 100px;
+    width: 700px;
+    height: 700px;
+    border-radius: 120px;
+}
+
+.foto-content-construccion {
+    padding: 100px;
+    width: 100%;
+    height: 700px;
+    border-radius: 120px;
+}
+  
+.resumen {
+    width: 50%;
+    height: 55em;
+    float: right;
+}
+  
+.resumen-content {
+    padding: 100px;
+    width: 700px;
+    height: 700px;
+}
+
+.resumen-menu {
+    margin-top: 100px;
+    width: 700px;
+    height: 30px;
+}
+
+.resumen-menu a{
+    color: #031634;
+    text-decoration: none;
+    font-size: 28px;
+    opacity: 1;
+}
+
+.resumen-menu a:hover{
+    color: #b09872;
+    text-decoration: none;
+    font-size: 28px;
+    opacity: 1;
+}
+
+.resumen-content-comida {
+    margin-top: 40px;
+    width: 700px;
+    height: 440px;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+/*Pantalla de Tour principal*/
+.tour-foto{
+    height: 25em;
+}
+
+.tour-foto-content{
+    width: 100%;
+    height: 25em;
+}
+
+.tour-precio{
+    margin-top: 4em;
+    height:8em;
+    border: #031634 solid;
+    color: #031634;
+    font-weight: bolder;
+}
+
+.tour-precio-left{
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin: 5px;
+    font-size: 42px;
+    padding: 40px;
+}
+
+.tour-precio-right{
+    float: right;
+    width: 40%;
+    text-align: right;
+    margin: 5px;
+    padding: 40px;
+    font-size: 42px;
+}
+
+.tour-tabla{
+    height: 27em;
+}
+
+table{
+    text-align: center;
+    color: #031634;
+    font-size:42px;
+    border-spacing: 5px;
+    table-layout: fixed; 
+    width: 1500px;
+    margin: auto;
+    padding-top: 20px;
+    /*border-spacing: 20px;*/
+}
+
+.td-dias{
+    background-color: #031634;
+    opacity: .8;
+    color: #f2f2f2;
+}
+
+td>a{
+    color: #031634;
+}
+
+/* End Tour pagina principal */
+
+/* Pantalla de Tour Detalle */
+
+.tour-detalle-titulo{
+    height: 10em;
+}
+
+.tour-detalle-titulo>h1{
+   font-size: 72px; 
+   padding-top: 1.2em;
+}
+
+.tour-detalle-titulo>h1 a{
+    color:#031634;
+ }
+
+.tour-detalle-foto{
+    height: 30em;
+}
+
+.tour-detalle-foto-content{
+    height: 30em;
+    margin-top: 30px;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.tour-detalle-descripcion{
+    height: 20em;
+    margin-top: 60px;
+    justify-content: center;
+    font-size: 16px;
+    padding: 30px;
+
+}
+
+.tour-detalle-descripcion>p{
+    text-align: justify;
+    line-height: 0;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/* End Pantalla de Tour Detalle */
+
+/* Comidas - los imprescindibles */
+
+.fotos-imprescindibles-1{
+    height: 20em;
+    margin-top: 7em;
+}
+
+.foto-title{
+    height: 5em;
+}
+
+.foto-title-content{
+    text-align: center;
+    color: #031634;
+    font-size: xx-large;
+    padding-top: 100px;
+}
+
+.foto-imprescindibles{
+    height: 15em;
+    text-align: center;
+}
+
+.foto-imprescindibles-content{
+    width: 60%;
+    height: 100%;
+    border-radius: 8px;
+    border: #031634 solid;
+}
+
+.fotos-imprescindibles-izq{
+    float: left;
+    width: 33%;
+}
+
+.fotos-imprescindibles-center{
+    float: left;
+    width: 33%;
+}
+
+.fotos-imprescindibles-derecha{
+    float: right;
+    width: 33%;
+}
+
+.fotos-imprescindibles-2{
+    height: 20em;
+    margin-top: 3em;
+}
+
+
+
+/* Fin Comidas - los imprescindibles */
+
+/*Página tour - Desarrollo de las paginas siguientes
+.foto-tour{}
+.precio-tour{}
+.tabla-tour{}
+/*End Página tour*/
+
+/*Página Detalle tour - Desarrollo de las paginas siguientes
+.titulo-detalle-tour{}
+.foto-detalle-tour{}
+.resumen-detalle-tour{}
+/*End Página Detalle tour*/
+
+
+/*Slider*/
+.imagenes-slider{
+    width: 1000px;
+    height: 1000px;
+}
+
+.slider-frame {
+	width: 100%;
+    height: 93.5%; /*El tamaño es muy preciso para que no 
+    solape el contenido que viene a continuación*/
+	margin:50px auto 0; /*El tamaño es muy preciso para que no 
+    desplace el contenido*/
+	overflow: hidden; /*Oculta el contenido que sobra*/
+}
+
+.slider-frame ul {
+	display: flex; /*Para poner las imágenes una al lado de 
+    la otra*/
+	padding: 0;
+	width: 400%; /*Como hemos puesto 4 imágenes, se reparte 
+    entre las cuatro*/
+	animation: slide 20s infinite alternate ease-in-out; /*Para
+    que las transiciones sean suaves*/
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+    /*Reparte el tiempo de la animación 
+    entre las cuatro imágenes*/
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	/*El intervalo que nos dejamos es el tiempo 
+    entre transiciones*/
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/* End Slider */
+
+/* footer */
+footer {
+    background-color: #031634;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.footerContainer {
+    margin: 10px auto;
+}
+
+/*Distribucion logos*/
+.socialIcons {
+ display: flex;
+ justify-content: center;
+}
+
+/*Circulo logos*/
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin: 10px 10px 20px;
+    border-radius: 50%;
+}
+
+/*Logos*/
+.socialIcons a i{
+    font-size: 30px;
+    color: #031634;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+}
+
+.socialIcons a:hover{
+    background-color: #031634;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: #f2f2f2;
+    transition: 0.5s;
+}
+
+.footerNav ul {
+    /*display: flex; Se elimina el display:flex*/
+    justify-content: center;
+    list-style: none;
+}
+
+/* Se elimina porque no es necesario por las listas. 
+.footerNav ul li a {
+    color: #f2f2f2;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+    color: #E8DDCB;
+}
+*/
+
+.footerNav a {
+    color: #f2f2f2;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.footerNav a:hover {
+    color: #E8DDCB;
+    margin: 20px;
+    text-decoration: none;
+    opacity: 1;
+}
+/* End footer */
+
+
+/* NEWSLETTER */
+.container-newsletter-mail {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-foto{
+    margin-bottom: 20px;
+}
+
+.newsletter-foto img {
+    height: 725px;
+}
+
+.tbox {
+    width: 260px;
+}
+
+.btn {
+    border: none;
+    background: #031634;
+    color: #f2f2f2;
+    width: 130px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+/* información de interés*/
+.mapa-informacion {
+    margin-top: 150px;
+    margin-left: 110px;
+    float: left;
+}
+
+.informacionInteres {
+    margin-top: 125px;
+    margin-right: 350px;
+    float: right;
+}
+
+/* Formulario */
+.form {
+    background-color: #f2f2f2;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    /*box-shadow: 0 10px 25px rgba(92, 99, 105, .2);*/
+}
+
+.inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.inputContainerTextArea {
+    position: relative;
+    height: 145px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+/* Style the inputs */
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    z-index: 1;
+    background-color: #ffffff;
+    opacity: 0.5;
+  }
+  
+  /* Hide the placeholder texts (a) */
+  
+  ::placeholder {
+    color: transparent;
+  }
+/* Styling text labels */
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: #f2f2f2;
+    color: #031634;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+  }  
+
+  .submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color:#036564; /*#031634;*/
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  .submitBtn:hover {
+    background-color:#036564;/* #155fd6;*/
+    /*transform: translateY(-2px);*/
+  }  
+
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: #031634;
+  }
+
+  .input:focus {
+    border: 2px solid #031634;
+  }
+
+  .input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
