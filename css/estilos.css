@@ -268,6 +268,14 @@ p {
   padding-top: 100px;
 }
 
+.title-content-right {
+  text-align: right;
+  margin-right: 500px;
+  color: #031634;
+  font-size: xx-large;
+  padding-top: 100px;
+}
+
 .foto {
   width: 50%;
   height: 55em;
@@ -493,18 +501,6 @@ td > a {
 
 /* Fin Comidas - los imprescindibles */
 
-/*Página tour - Desarrollo de las paginas siguientes
-.foto-tour{}
-.precio-tour{}
-.tabla-tour{}
-/*End Página tour*/
-
-/*Página Detalle tour - Desarrollo de las paginas siguientes
-.titulo-detalle-tour{}
-.foto-detalle-tour{}
-.resumen-detalle-tour{}
-/*End Página Detalle tour*/
-
 /*Slider*/
 @keyframes slidy {
   0% {
@@ -695,8 +691,7 @@ footer {
 /* NEWSLETTER */
 .container-newsletter-mail {
   height: 40px;
-  display: flex; /*TODO: Eliminar el flex*/
-  justify-content: center;
+  text-align: center;
 }
 
 .newsletter-foto {
@@ -709,6 +704,7 @@ footer {
 
 .tbox {
   width: 260px;
+  height: 30px;
 }
 
 .btn {
@@ -716,8 +712,8 @@ footer {
   background: #031634;
   color: #f2f2f2;
   width: 130px;
-  padding: 0 10px;
   cursor: pointer;
+  height: 30px;
 }
 /* End NEWSLETTER */
 
@@ -833,12 +829,36 @@ footer {
   font-size: 14px;
   font-weight: 600;
 }
+/* End Formulario */
 
+/* Efecto Polaroid paginas con fotos a la izquierda */
 .polaroid {
-  background-color: white;
-  padding: 10px 10px 50px 10px;
-  border: 1px solid #bfbfbf;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
-  width: 400px;
-  height: 400px;
+  position: relative;
+  width: 740px;
+  height: 740px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: -1;
+  margin-left: 50px;
+  border-bottom: #ffffff 100px solid;
 }
+
+.polaroid img {
+  width: 700px;
+  height: 700px;
+  border-radius: 5px; /* Redondea las esquinas de la imagen */
+}
+
+.polaroid::after {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: -1; /* Pone la sombra detrás del Polaroid */
+}
+/*End Efecto Polaroid paginas con fotos a la izquierda */
