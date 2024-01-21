@@ -862,3 +862,56 @@ footer {
   z-index: -1; /* Pone la sombra detrás del Polaroid */
 }
 /*End Efecto Polaroid paginas con fotos a la izquierda */
+
+/*Video*/
+.video{
+  width: 700px;
+  height: 640px;
+  margin-left: 100px;
+}
+/*End Video*/
+
+/* Pagina de ofertas */
+.principal-content-ofertas {
+  height: 57em;
+}
+
+.principal-content-ofertas-content {
+  background-color: #eae8e4;
+  text-align: center;
+  height: 45em;
+  margin-top: 1em;
+  padding-top: 3em;
+  padding-bottom: 1em; 
+  padding-left: 2em;
+  color: #031634;
+  column-count: 3;
+  column-gap: 130px;
+  column-rule: 4px Outset #f2f2f2;
+  list-style-type: none;
+}
+
+.card {
+  width: 84%;
+  margin: 20px;
+  margin-left: 40px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+  float: left; /* Para colocar cada tarjeta en una nueva línea */
+  z-index: -1;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card-img{
+  height: 400px;
+  width: 400px;
+}
+/* End Pagina de ofertas */
