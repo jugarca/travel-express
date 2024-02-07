@@ -282,22 +282,9 @@ p {
   float: left;
 }
 
-.foto-construccion {
-  width: 90%;
-  height: 55em;
-  float: left;
-}
-
 .foto-content {
   padding: 100px;
   width: 700px;
-  height: 700px;
-  border-radius: 120px;
-}
-
-.foto-content-construccion {
-  padding: 100px;
-  width: 100%;
   height: 700px;
   border-radius: 120px;
 }
@@ -942,4 +929,15 @@ footer {
 
 .text-resumen{
   font-size: 18px;
+}
+
+/* Pagina Politica y cookies */
+
+.resumen-politica{
+  width: 80%;
+  height: 55em;
+}
+
+.resumen-content-politica {
+  padding: 100px;
 }
