@@ -106,7 +106,7 @@ nav ul li:hover .submenu {
 .submenu {
   position: absolute;
   display: none;
-  width: 200px; /*  Para jugar con los tamaños de los menus : !!!! pondria fijo px*/
+  width: 200px; 
   background: #031634;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -378,7 +378,6 @@ table {
   width: 1500px;
   margin: auto;
   padding-top: 20px;
-  /*border-spacing: 20px;*/
 }
 
 .td-dias {
@@ -637,7 +636,7 @@ footer {
   border-radius: 50%;
 }
 
-/*Logos*/
+/*Logos footer*/
 .socialIcons a i {
   font-size: 30px;
   color: #031634;
@@ -678,7 +677,7 @@ footer {
 }
 /* End footer */
 
-/* NEWSLETTER */
+/* suscribete */
 .container-newsletter-mail {
   height: 40px;
   text-align: center;
@@ -705,7 +704,7 @@ footer {
   cursor: pointer;
   height: 30px;
 }
-/* End NEWSLETTER */
+/* End suscribete */
 
 /* información de interés*/
 .mapa-informacion {
@@ -727,7 +726,6 @@ footer {
   width: 400px;
   border-radius: 8px;
   padding: 20px 40px;
-  /*box-shadow: 0 10px 25px rgba(92, 99, 105, .2);*/
 }
 
 .inputContainer {
@@ -786,7 +784,7 @@ footer {
   margin-left: auto;
   padding: 15px 30px;
   border: none;
-  background-color: #036564; /*#031634;*/
+  background-color: #036564; 
   color: white;
   border-radius: 6px;
   cursor: pointer;
@@ -795,8 +793,7 @@ footer {
 }
 
 .submitBtn:hover {
-  background-color: #036564; /* #155fd6;*/
-  /*transform: translateY(-2px);*/
+  background-color: #031634; 
 }
 
 .input:focus + .label {
