@@ -74,12 +74,9 @@ nav > ul {
 }
 
 nav > ul li {
-  /* display: inline;     Hace que los elementos se muestren en línea */
-  /*  margin-right: 10px; Espacio entre elementos (ajustable) */
   margin-right: 10px;
   position: relative;
   display: inline-block; /* Esten alineados las diferentes entradas de menu*/
-  /* width: 110px; Distancia entre cada entrada de menu principal px o %*/
   height: 30px; /* Altura para que no se vea entre los menus y submenus nada blanco*/
 }
 
@@ -115,8 +112,6 @@ nav ul li:hover .submenu {
 .submenu ul li {
   display: block;
   width: 100%;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
 
 /* End Menu - Zona de navegación de html*/
@@ -138,18 +133,11 @@ nav ul li:hover .submenu {
   padding: 5px;
 }
 
-.pSinMargen {
-  text-align: justify;
-  line-height: 1.2;
-  font-weight: bold;
-}
-
 /* Seccion Opciones - Pantalla principal */
 .principal-content-opciones {
   height: 17em;
 }
 
-/*Primer menú del cuerpo*/
 .principal-content-opciones-content {
   background-color: #eae8e4;
   margin-top: 1em;
@@ -170,7 +158,6 @@ nav ul li:hover .submenu {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  line-height: 100%;
   color: #031634;
 }
 
@@ -205,6 +192,11 @@ section a:hover {
   height: 200px;
   border: #031634 solid 4px;
 }
+
+section > div > li a:hover {
+  opacity: 0.5;
+}
+
 /* End Seccion Gastronomia - Pantalla principal */
 
 /* Seccion Nosotros - Pantalla principal */
@@ -212,7 +204,6 @@ section a:hover {
   height: 33em;
 }
 
-/*Mi intento de cambiar el color del fondo*/
 .principal-content-nosotros > h1 {
   padding-top: 15px;
   background-color: #eae8e4;
@@ -222,7 +213,6 @@ section a:hover {
 .principal-content-nosotros-content {
   background-color: #eae8e4;
   text-align: center;
-  /*margin-top: 1em;*/
   padding-top: 3em;
   padding-bottom: 1em;
   padding-left: 2em;
@@ -233,7 +223,6 @@ section a:hover {
 }
 
 .principal-content-nosotros-content-image {
-  background-color: #eae8e4;
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -242,10 +231,6 @@ section a:hover {
 /*Se centra el texto*/
 .principal-content-nosotros-texto {
   padding: 0 25% 0;
-}
-
-section > div > li a:hover {
-  opacity: 0.5;
 }
 
 /* End Seccion Nosotros - Pantalla principal */
@@ -515,12 +500,9 @@ td > a {
     left: -300%;
   }
 }
-* {
-  box-sizing: border-box;
-}
+
 figure {
   margin: 0;
-  font-family: "Belleza", sans-serif;
   font-weight: 100;
 }
 div#captioned-gallery {
@@ -553,6 +535,7 @@ figure.slider figure figcaption {
   font-size: 2rem;
   padding: 0.6rem;
 
+  /* Triangulo del slider*/
   border:1050px solid transparent;
   border-left:1050px solid rgba(3, 22, 52, .5);
   border-bottom:0;
@@ -582,9 +565,6 @@ figure.slider figure figcaption {
   float:left;
   position:relative;
   top:100px;
-  -webkit-animation:content-s 7.5s infinite;
-  -moz-animation:content-s 7.5s infinite;
-  animation:content-s 7.5s infinite;
 }
 
 .content-txt-triangulo h1{
@@ -821,8 +801,8 @@ footer {
 /* Efecto Polaroid paginas con fotos a la izquierda */
 .polaroid {
   position: relative;
-  width: 740px;
-  height: 740px;
+  width: 700px;
+  height: 700px;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -937,4 +917,11 @@ footer {
 
 .resumen-content-politica {
   padding: 100px;
+}
+
+.foto-conocenos {
+  width: 700px;
+  height: 700px;
+  margin-left: 100px;
+  border-radius: 5px; /* Redondea las esquinas de la imagen */
 }
